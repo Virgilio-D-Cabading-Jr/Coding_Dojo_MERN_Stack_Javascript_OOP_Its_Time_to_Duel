@@ -90,3 +90,10 @@ const pairProgramming = new Effect( "Pair Programming", 3, "Increases target's p
 console.log(pairProgramming);
 pairProgramming.play(redBeltNinja);
 console.log(redBeltNinja);
+
+console.log("\n***************************************");
+console.log("Red Belt Ninja Attacks Black Belt Ninja\n");
+
+redBeltNinja.attack(blackBeltNinja);
+console.log(redBeltNinja);
+console.log(blackBeltNinja);
