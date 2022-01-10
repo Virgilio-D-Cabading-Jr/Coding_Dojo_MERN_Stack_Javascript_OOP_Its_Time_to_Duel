@@ -30,3 +30,8 @@ class Unit extends Card {
         }
     }
 }
+
+//  //// EFFECT CLASS //////////////////////////////
+class Effect extends Card {
+    
+}
