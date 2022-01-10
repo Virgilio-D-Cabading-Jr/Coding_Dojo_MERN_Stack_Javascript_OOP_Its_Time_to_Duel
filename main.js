@@ -40,4 +40,15 @@ class Effect extends Card {
         this.stat = stat;               // Specific stat (power or resilience) of a Unit that Effect card will modify
         this.magnitude = magnitude;     // Magnitude is the ammount of change this Effect card will have on the Specified Stat
     }
+
+    //  **** Play Method ***************************
+    play ( target ) {
+        if ( target instanceof Unit ) { // Check to make sure that Target is an instance of Unit Class
+            this.stat == "power"
+                ? target.power += this.magnitude
+                : target.res += this.magnitude;
+        } else {
+            throw new Error ( "Target must be a unit!" );
+        }
+    }
 }
