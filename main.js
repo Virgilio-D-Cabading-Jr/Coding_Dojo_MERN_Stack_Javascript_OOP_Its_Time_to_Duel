@@ -62,15 +62,24 @@ const redBeltNinja = new Unit("Red Belt Ninja", 3, 3, 3);
 console.log(redBeltNinja);
 
 console.log("\n***************************************");
-console.log("Make an instance of Black Belt Ninja\n");
-
-const blackBeltNinja = new Unit( "Black Belt Ninja", 4, 5, 4 );
-console.log(blackBeltNinja);
-
-console.log("\n***************************************");
 console.log("Make an instance of Hard Algorithm and play it on Red Belt Ninja\n");
 
 const hardAlgorithm = new Effect( "Hard Algorithm",  2, "Increase target's resilience by 3", "resilience", 3);
 console.log(hardAlgorithm);
 hardAlgorithm.play(redBeltNinja);
 console.log(redBeltNinja);
+
+console.log("\n***************************************");
+console.log("Make an instance of Black Belt Ninja\n");
+
+const blackBeltNinja = new Unit( "Black Belt Ninja", 4, 5, 4 );
+console.log(blackBeltNinja);
+
+console.log("\n***************************************");
+console.log("Make an instance of Unhandled Promise Rejection and play it on Red Belt Ninja\n");
+
+const unhandledPromiseRejection = new Effect ( "Unhandled Promise Rejection", 1, "Reduce target's resilience by 2", "resilience", -2);
+console.log(unhandledPromiseRejection);
+unhandledPromiseRejection.play(redBeltNinja);
+console.log(redBeltNinja);
+
