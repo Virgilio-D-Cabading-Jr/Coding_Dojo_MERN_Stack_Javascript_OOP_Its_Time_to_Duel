@@ -17,12 +17,16 @@ class Unit extends Card {
     constructor (name, cost, power, res) {
         super (name, cost);     // Card Constructor
         this.power = power;     // Power of this Unit
-        this.res = res;         // Resistance of this unit
+        this.res = res;         // Resilience of this unit
     }
 
     //  **** ATTACK METHOD *************************
-    //  Reduce the target resistance according to this Unit's power
+    //  Reduce the target resilience according to this Unit's power
     attack (target) {
-        target.res -= this.power;
+        if ( target instanceof Unit) {  // Check to make sure target is an instance of Unit Class
+            target.res -= this.power;   // Reduce the target's resilience by amount of power of this Unit
+        } else {
+            throw new Error ( "Target musst be a Unit!" );
+        }
     }
 }
