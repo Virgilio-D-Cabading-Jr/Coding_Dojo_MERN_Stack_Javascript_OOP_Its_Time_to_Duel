@@ -83,3 +83,5 @@ console.log(unhandledPromiseRejection);
 unhandledPromiseRejection.play(redBeltNinja);
 console.log(redBeltNinja);
 
+console.log("\n***************************************");
+console.log("Make an instance of Pair Programming and play it on Red Belt Ninja\n");
