@@ -34,7 +34,10 @@ class Unit extends Card {
 //  //// EFFECT CLASS //////////////////////////////
 class Effect extends Card {
     //  **** CONSTRUCTOR ***************************
-    constructor (name, cost) {
-        
+    constructor (name, cost, text, stat, magnitude) {
+        super ( name, cost );           // Card Constructor
+        this.text = text;               // Text describes card's effect on a unit
+        this.stat = stat;               // Specific stat (power or resilience) of a Unit that Effect card will modify
+        this.magnitude = magnitude;     // Magnitude is the ammount of change this Effect card will have on the Specified Stat
     }
 }
