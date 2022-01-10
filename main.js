@@ -33,5 +33,8 @@ class Unit extends Card {
 
 //  //// EFFECT CLASS //////////////////////////////
 class Effect extends Card {
-    
+    //  **** CONSTRUCTOR ***************************
+    constructor (name, cost) {
+        
+    }
 }
