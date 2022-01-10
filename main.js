@@ -4,5 +4,8 @@
 
 //  //// CARD CLASS ////////////////////////////////
 class Card {
+    constructor (name, cost) {
+        
+    }
 
 }
