@@ -56,4 +56,7 @@ class Effect extends Card {
 //  //// MAIN EXECUTABLE SECTION /////////////////////
 
 console.log("***************************************");
-console.log("Make an instance of Red ZBelt Ninja\n");
+console.log("Make an instance of Red Belt Ninja\n");
+
+const redBeltNinja = new Unit("Red Belt Ninja", 3, 3, 3);
+console.log(redBeltNinja);
