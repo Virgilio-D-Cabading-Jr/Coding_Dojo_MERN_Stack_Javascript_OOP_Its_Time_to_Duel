@@ -2,3 +2,8 @@
 
 This is a program for Coding Dojo > MERN Stack > Javascript > Object Oriented Programming
 
+Language: Javascript
+Platform: Visual Studio Code
+
+-----------------
+
