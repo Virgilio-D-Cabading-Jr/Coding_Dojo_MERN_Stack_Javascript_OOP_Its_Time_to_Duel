@@ -15,6 +15,8 @@ class Card {
 class Unit extends Card {
     //  **** CONSTRUCTOR ***************************
     constructor (name, cost, power, res) {
-        
+        super (name, cost);
+        this.power = power;
+        this.res = res;
     }
 }
