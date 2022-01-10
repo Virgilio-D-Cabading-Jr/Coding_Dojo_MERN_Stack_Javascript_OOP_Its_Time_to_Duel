@@ -60,3 +60,7 @@ console.log("Make an instance of Red Belt Ninja\n");
 
 const redBeltNinja = new Unit("Red Belt Ninja", 3, 3, 3);
 console.log(redBeltNinja);
+
+console.log("***************************************");
+console.log("Make an instance of Black Belt Ninja\n");
+
