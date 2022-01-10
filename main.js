@@ -15,8 +15,14 @@ class Card {
 class Unit extends Card {
     //  **** CONSTRUCTOR ***************************
     constructor (name, cost, power, res) {
-        super (name, cost);
-        this.power = power;
-        this.res = res;
+        super (name, cost);     // Card Constructor
+        this.power = power;     // Power of this Unit
+        this.res = res;         // Resistance of this unit
+    }
+
+    //  **** ATTACK METHOD *************************
+    //  Reduce the target resistance according to this Unit's power
+    attack (target) {
+        target.res -= this.power;
     }
 }
