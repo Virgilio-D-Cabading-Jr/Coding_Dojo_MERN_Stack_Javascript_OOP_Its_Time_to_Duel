@@ -85,3 +85,6 @@ console.log(redBeltNinja);
 
 console.log("\n***************************************");
 console.log("Make an instance of Pair Programming and play it on Red Belt Ninja\n");
+
+const pairProgramming = new Effect( "Pair Programming", 3, "Increases target's power by 2" , "power", 2);
+console.log(pairProgramming);
