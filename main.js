@@ -52,3 +52,8 @@ class Effect extends Card {
         }
     }
 }
+
+//  //// MAIN EXECUTABLE SECTION /////////////////////
+
+console.log("***************************************");
+console.log("Make an instance of Red ZBelt Ninja\n");
